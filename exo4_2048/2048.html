@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>2048</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+		<script type="text/javascript" src="java/2048.js"></script>
+		<script type="text/javascript" src="java/color.js"></script>
+		<script type="text/javascript" src="java/color2.js"></script>
+		<link rel="stylesheet" href="css/CPR.css"> 
+    </head>
+	<body >
+		<div class="col-12">
+			<div class="web">
+				<p class="titre">le jeu</p>
+				<p class="titre2">2048</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-12">
+				<div id="bien">
+						<p class="score">Score:</p>
+						<hr/ class="S">
+						<div id="score"></div>
+						<div id="bien2" class="container2">
+							<div class="overlay">
+								<div class="ac">
+									<a href="../../index.html"><img class="imagg" src="images/cv.JPG"/></a>
+									<a href="../../CV/cv.html/"><img class="imagg" src="images/premier_cv.JPG"/></a>
+									<a href="../exo1_coton/coton.html"><img class="imagg" src="images/simp.JPG"/></a>
+									<a href="../exo2_corps/corp.html"><img class="imagg" src="images/corps.JPG"/></a>
+									<a href="../exo3_countdown/countdown.html"><img class="imagg" src="images/compt.JPG"/></a>
+								</div>
+							</div>
+							<p class="rotation">ME</p>
+							<img class="acc" src="images/home.png"/>
+							<p class="rotation2">H</p>
+						</div>
+					</div>
+					<div id="bien3">
+					<A HREF="https://github.com/benarts/cvS/tree/gh-pages/exo/exo4_2048"><img class="git" src="images/git.png"/></A>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="web2">
+				<section id="decompter">
+					<div class="decompter">
+					</div>
+				</section>
+			</div>
+		</div>
+			<div class="col-12">
+				<div class="generalS">		
+					<div class="regle_general">
+						<span class="bouton1" onclick="javascript:afficher_cacher('but_du_jeu');">
+							<p class="regle">
+								LES REGLES
+							</p>
+						</span>
+						<div id="but_du_jeu" class="but_du_jeu">
+							<h1>LES REGLES DU JEU</h1>
+							<hr />
+							Le but du jeu est de faire glisser des tuiles sur une grille,
+							pour combiner les tuiles de mêmes valeurs et créer ainsi une tuile portant le nombre 2048. 
+							Le joueur peut toutefois continuer à jouer après cet objectif atteint pour faire 
+							le meilleur score possible..
+							<hr />
+							<p class="aide">Utilisez les flèches pour faire bouger les cases.</p>
+						</div>
+					</div>
+					<button id="reset" class="btn" type="button" onClick="window.location.reload()">Relancer</button>
+					<div class="resulta_general">
+						<div id="but_du_jeu2" class="but_du_jeu2">
+							<hr />
+							<img class="resulta_2048" src="images/2048.jpg"/>
+							<hr />
+						</div>
+						<span class="bouton2" onclick="javascript:afficher_cacher('but_du_jeu2');">
+							<p class="resulta">
+								RESULTAT
+							</p>
+						</span>
+					</div>
+				</div>
+			</div>				
+		<script type="text/javascript" src="java/bouton.js"></script>
+	</body>
+</html>
